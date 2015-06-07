@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="magmaapp.example.xavi.magmaapp.CategoriaActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/imageView_image_prod"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="Contingut producte"
+        android:visibility="visible"
+        android:src="@drawable/nophoto"
+        android:layout_weight="0.9"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignBottom="@+id/imageView_image_prod"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView_image_prod"
+        android:layout_toEndOf="@+id/imageView_image_prod"
+        android:layout_weight="1"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:id="@+id/textView_nom_prod"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:text="Nom Producte"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|right"
+            android:textSize="26sp"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:id="@+id/textView_ref_prod"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:text="Tema Producte"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:layout_weight="1"
+            android:gravity="right|top" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Preu"
+            android:id="@+id/preu"
+            android:layout_weight="1.5"
+            android:gravity="bottom|right"
+            android:textSize="20sp"
+            android:paddingBottom="9dp" />
+
+    </LinearLayout>
+</LinearLayout>

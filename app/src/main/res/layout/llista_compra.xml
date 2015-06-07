@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ListView_llistat_compra"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_above="@+id/button_compra"
+        android:layout_weight = "8">
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:id="@+id/preu_total"
+        android:textAlignment="gravity"
+        android:background="#ff000000"
+        android:textColor="#ffffffff"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|right"
+        android:layout_alignParentBottom="true"
+        android:layout_weight = "0.7"
+        android:text="TOTAL 0.0 €"
+        android:enabled="false"
+        android:password="false"
+        android:phoneNumber="false"
+        android:singleLine="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:text="COMPRA"
+        android:id="@+id/button_compra"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/preu_total"
+        android:layout_marginTop="0dp"
+        android:layout_weight = "1.2"
+        android:longClickable="true"
+        android:background="@drawable/button_shadow" />
+
+</LinearLayout>

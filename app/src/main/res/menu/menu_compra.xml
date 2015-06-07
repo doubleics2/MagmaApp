@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="magmaapp.example.xavi.magmaapp.CompraActivity">
+
+    <!--<item
+        android:id="@+id/action_shop"
+        android:title="@string/action_shop"
+        android:icon="@drawable/cistella"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/action_shop"
+        android:actionLayout="@layout/feed_update_count"
+        android:icon="@drawable/cistella"
+        android:showAsAction="always">
+    </item>
+</menu>

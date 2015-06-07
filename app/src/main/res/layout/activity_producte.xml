@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="magmaapp.example.xavi.magmaapp.ProducteActivity"
+    android:background="#ffffff"
+    android:visibility="visible">
+
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/big_image"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/margincolor"
+        android:layout_above="@+id/quadre_inferior" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageProducte"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/margincolor"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/nophoto" />
+
+    <LinearLayout
+        android:id="@+id/quadre_inferior"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageProducte"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/nom_producte"
+            android:textAlignment="gravity"
+            android:gravity="right"
+            android:layout_below="@+id/imageProducte"
+            android:text="Categoria"
+            android:textSize="33sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tema"
+            android:id="@+id/tema"
+            android:layout_below="@+id/nom_producte"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.5"
+            android:textSize="12sp"
+            android:gravity="right" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Preu"
+            android:id="@+id/preu"
+            android:layout_below="@+id/tema"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.7"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textAlignment="gravity" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/button_afegir"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="0" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:text="Afegir"
+            android:id="@+id/button_afegir"
+            android:visibility="visible"
+            android:background="#ff000000"
+            android:textColor="#ffffffff"
+            android:textSize="25sp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
